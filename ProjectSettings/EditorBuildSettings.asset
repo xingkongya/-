@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/SampleScene.unity"
+    guid: f0a6d27069924504c97c832f150252cb
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u732B\u738B\u5267\u60C5_01.unity"
+    guid: 033fd8d297aba144aa9de67354039659
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u732B\u738B\u5267\u60C5_02.unity"
+    guid: d359ffe87b7e978418b4e77b73c731ac
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u732B\u738B\u5267\u60C5_03.unity"
+    guid: 0b8dd61f2157e8549944c44e9ab6e031
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/mao_Home.unity"
+    guid: 1d6dee4b9a563ce4abd596b2efc5273d
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u6751\u53E3\u5C0F\u9053.unity"
+    guid: ad4b09bcea380ed49be85f724a5943cc
+  m_configObjects: {}
