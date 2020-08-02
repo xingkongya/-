@@ -4,14 +4,14 @@ public class ChangAn : MonoBehaviour
     public float Ping;
     private bool IsStart = false;
     private float LastTime = 0;
-    private 怪物属性 gwsx;
-    private 人物属性 rwsx;
+    private 怪物战斗 gwsx;
+    private 人物战斗 rwsx;
     private string 人物攻击目标;
 
     private void Start()
     {
-        gwsx = gameObject.transform.parent.GetComponent<怪物属性>();
-        rwsx = GameObject.Find("牧师").GetComponent<人物属性>();
+        gwsx = gameObject.transform.parent.GetComponent<怪物战斗>();
+        rwsx = GameObject.Find("牧师").GetComponent<人物战斗>();
     }
     void Update()
     {

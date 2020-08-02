@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class 人物属性 : MonoBehaviour
+public class 人物战斗 : MonoBehaviour
 {
     public bool 自动攻击=false;
     public int 等级;
@@ -18,8 +18,8 @@ public class 人物属性 : MonoBehaviour
     private GameObject 攻击目标;
     private int 扣血;
     private Slider 血条;
-    public bool isAttack = false;
-    private 怪物属性 gw;
+    private bool isAttack = false;
+    private 怪物战斗 gw;
     private Vector3 攻击坐标;
     private Vector3 原来坐标;
     private 扣血显示 kxxs;
@@ -43,7 +43,9 @@ public class 人物属性 : MonoBehaviour
             猪脚失败();
         }
 
+        //位置的移动(模拟攻击动画)
         transform.position = Vector3.MoveTowards(transform.position, 原来坐标, 20);
+
         //判断攻击状态
         if (isAttack)
         {
@@ -53,7 +55,7 @@ public class 人物属性 : MonoBehaviour
             { 攻击目标 = GameObject.Find("初始化");
                 isAttack = false;
             }
-            gw = 攻击目标.GetComponent<怪物属性>();
+            gw = 攻击目标.GetComponent<怪物战斗>();
             kxxs = 攻击目标.transform.Find("扣血_怪物").GetComponent<扣血显示>();
 
             ///
@@ -76,14 +78,14 @@ public class 人物属性 : MonoBehaviour
         isAttack = true;
     }
 
-    public int 攻击(怪物属性 gw)
+    public int 攻击(怪物战斗 gw)
     {
         transform.position = Vector3.MoveTowards(transform.position, 攻击坐标, 20);
         //判断怪物是否还有生命
         if (gw.剩余血量 > 0)
         {
             //攻击
-            int 扣血_ = 攻击力 - gw.防御力成长 * gw.等级;
+            int 扣血_ = 攻击力 - gw.防御力 * gw.等级;
             //判断是否破防,不破防伤害为0
             扣血 = 扣血_ >= 0 ? 扣血_ : 0;
             kxxs.扣血 = 扣血;
@@ -101,7 +103,6 @@ public class 人物属性 : MonoBehaviour
     }
 
     public void 猪脚失败() {
-        gw.isAttack = false;
         isAttack = false;
         //黑屏动画
 

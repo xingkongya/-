@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class 常用场景脚本 : MonoBehaviour
 {
     public string 场景名字;
-    private 怪物属性 gwsx;
+    private 怪物战斗 gwsx;
  
 
     public void 场景跳转()
