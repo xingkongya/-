@@ -8,7 +8,7 @@ public class 文字逐渐打印 : MonoBehaviour
     public Text wenZiText;
     public string str = "";
     string s = "";
-    public float 语速=0.1f;
+    public float 语速=0.05f;
 
 
     // Start is called before the first frame update

@@ -112,19 +112,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4862632573690654503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383657481186199397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ffacca95646cfb41a324948db5f19cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Ping: 0.6
 --- !u!114 &4862632573690654502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,6 +156,19 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   delegates: []
+--- !u!114 &4862632573690654503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383657481186199397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ffacca95646cfb41a324948db5f19cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ping: 0.6
 --- !u!1001 &5746879535355548566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,7 +406,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114273018227049656, guid: cb918dc9f6416894eb5885ed1476a6d4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cb918dc9f6416894eb5885ed1476a6d4, type: 3}
 --- !u!1 &8582241391342172392 stripped
 GameObject:

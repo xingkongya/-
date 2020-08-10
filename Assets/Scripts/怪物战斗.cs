@@ -13,6 +13,8 @@ public class 怪物战斗 : MonoBehaviour
     public float 攻击速度;
     private float 攻击速度_初始 = 0;
     public int 剩余血量;
+    public int 经验值;
+    private actor 人物属性;
     private GameObject 攻击目标;
     private int 扣血;
     private Slider 血条;
@@ -28,6 +30,7 @@ public class 怪物战斗 : MonoBehaviour
     {
         血条 = gameObject.GetComponent<Slider>();
         dtgw = GameObject.Find("画布").GetComponent<地图怪物_工具>();
+        人物属性 = GameObject.Find("牧师_all").transform.Find("状态栏").GetComponent<actor>();
         初始化();
         血条.maxValue = 血量;
         剩余血量 = 血量;
@@ -50,7 +53,9 @@ public class 怪物战斗 : MonoBehaviour
         //判断自己是否还有生命
         if (剩余血量 <= 0)
         {
+           
             怪物失败();
+            
         }
 
         //位置的移动(模拟攻击动画)
@@ -79,6 +84,10 @@ public class 怪物战斗 : MonoBehaviour
         }
 
 
+    }
+
+    public string 返回怪物名() {
+        return gameObject.name;
     }
 
     public string 开启战斗()
@@ -110,7 +119,12 @@ public class 怪物战斗 : MonoBehaviour
 
      void 怪物失败()
     {
+        //怪物死亡重置普攻
+        rw.攻击速度_初始=0;
         isAttack = false;
+        rw.isAttack = false;
+        
+        人物属性.当前经验增加(经验值);
         gameObject.SetActive(false);
     }
 

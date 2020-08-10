@@ -23,16 +23,19 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
 
     public void 怪物一赋值(地图怪物_工具 dtgw) {
         dtgw.怪物名字 = "小鸡";
+        dtgw.怪物位阶 = 1;
         dtgw.是否主动攻击 = false;
         dtgw.最低等级 = 1;
         dtgw.最高等级 = 5;
         dtgw.基础攻击力 = 5;
         dtgw.基础防御力 = 0;
-        dtgw.基础血量 = 15;
+        dtgw.基础血量 = 10;
         dtgw.攻击力成长 = 2;
         dtgw.防御力成长 = 0;
         dtgw.血量成长 = 5;
-        dtgw.攻击速度 = 3;
+        dtgw.攻击速度 = 2;
+        dtgw.基础经验 = 10;
+        dtgw.经验系数 = 2;
 
     }
 
@@ -40,7 +43,8 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
     public void 怪物二赋值(地图怪物_工具 dtgw)
     {
         dtgw.怪物名字 = "老母鸡";
-        dtgw.是否主动攻击 = true;
+        dtgw.怪物位阶 = 2;
+        dtgw.是否主动攻击 = false;
         dtgw.最低等级 = 3;
         dtgw.最高等级 = 5;
         dtgw.基础攻击力 = 8;
@@ -49,13 +53,16 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击力成长 = 3;
         dtgw.防御力成长 = 0;
         dtgw.血量成长 = 8;
-        dtgw.攻击速度 = 2f;
+        dtgw.攻击速度 = 1.8f;
+        dtgw.基础经验 = 40;
+        dtgw.经验系数 = 3;
 
     }
 
     public void 怪物三赋值(地图怪物_工具 dtgw)
     {
         dtgw.怪物名字 = "大公鸡";
+        dtgw.怪物位阶 = 2;
         dtgw.是否主动攻击 = false;
         dtgw.最低等级 = 3;
         dtgw.最高等级 = 5;
@@ -65,13 +72,16 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击力成长 = 4;
         dtgw.防御力成长 = 0;
         dtgw.血量成长 = 6;
-        dtgw.攻击速度 = 2.5f;
+        dtgw.攻击速度 = 2f;
+        dtgw.基础经验 = 40;
+        dtgw.经验系数 = 3;
 
     }
 
     public void 怪物四赋值(地图怪物_工具 dtgw)
     {
         dtgw.怪物名字 = "七彩羽鸡";
+        dtgw.怪物位阶 = 3;
         dtgw.是否主动攻击 = false;
         dtgw.最低等级 = 5;
         dtgw.最高等级 = 5;
@@ -81,7 +91,9 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击力成长 = 5;
         dtgw.防御力成长 = 1;
         dtgw.血量成长 = 20;
-        dtgw.攻击速度 = 1.5f;
+        dtgw.攻击速度 = 1.2f;
+        dtgw.基础经验 = 100;
+        dtgw.经验系数 = 10;
 
     }
 

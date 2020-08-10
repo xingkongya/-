@@ -12,13 +12,13 @@ public class 人物战斗 : MonoBehaviour
     public int 攻击力;
     public int 防御力;
     public float 攻击速度;
-    private float 攻击速度_初始=0;
+    public float 攻击速度_初始=0;
     public int 剩余血量;
     public string 攻击目标名字="初始化";
     private GameObject 攻击目标;
     private int 扣血;
     private Slider 血条;
-    private bool isAttack = false;
+    public bool isAttack = false;
     private 怪物战斗 gw;
     private Vector3 攻击坐标;
     private Vector3 原来坐标;
@@ -50,7 +50,7 @@ public class 人物战斗 : MonoBehaviour
         if (isAttack)
         {
             攻击目标 = GameObject.Find(攻击目标名字);
-            //攻击目标丢失,停止攻击,攻击目标初始化
+            //攻击目标丢失,停止攻击,攻击目标初始化(经优化,可删)
             if (攻击目标 == null)
             { 攻击目标 = GameObject.Find("初始化");
                 isAttack = false;
@@ -85,20 +85,19 @@ public class 人物战斗 : MonoBehaviour
         if (gw.剩余血量 > 0)
         {
             //攻击
-            int 扣血_ = 攻击力 - gw.防御力 * gw.等级;
+            int 扣血_ = 攻击力 - gw.防御力;
             //判断是否破防,不破防伤害为0
             扣血 = 扣血_ >= 0 ? 扣血_ : 0;
             kxxs.扣血 = 扣血;
         }
         else {
+            //自动攻击转移目标
             if (自动攻击)
             {
 
             }
-            else isAttack = false;
         }
         gw.剩余血量 -= 扣血;
-
         return 扣血;
     }
 
