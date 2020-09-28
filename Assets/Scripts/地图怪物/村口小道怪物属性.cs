@@ -36,6 +36,7 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击速度 = 2;
         dtgw.基础经验 = 10;
         dtgw.经验系数 = 2;
+        dtgw.必掉材料 = "鸡毛";
 
     }
 
@@ -56,6 +57,7 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击速度 = 1.8f;
         dtgw.基础经验 = 40;
         dtgw.经验系数 = 3;
+        dtgw.必掉材料 = "鸡蛋";
 
     }
 
@@ -75,6 +77,7 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击速度 = 2f;
         dtgw.基础经验 = 40;
         dtgw.经验系数 = 3;
+        dtgw.必掉材料 = "鸡冠";
 
     }
 
@@ -94,6 +97,7 @@ public class 村口小道怪物属性 : MonoBehaviour,怪物属性
         dtgw.攻击速度 = 1.2f;
         dtgw.基础经验 = 100;
         dtgw.经验系数 = 10;
+        dtgw.必掉材料 = "七彩羽";
 
     }
 

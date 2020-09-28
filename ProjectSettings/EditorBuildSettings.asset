@@ -23,4 +23,19 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u6751\u53E3\u5C0F\u9053.unity"
     guid: ad4b09bcea380ed49be85f724a5943cc
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u5F90\u5DDE\u57CE\u5357.unity"
+    guid: e3719af5091135d449d8a06f46e8c54a
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u5C0F\u9EC4\u5267\u60C5_01.unity"
+    guid: 2bdd7d949d073874dbe97b0b36d8592c
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u5F90\u5DDE\u57CE\u5317.unity"
+    guid: 1cc8eb8d2526b0b44b756145130fd86c
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u57CE\u95E8\u5C0F\u9053.unity"
+    guid: f6ecda52ae4ced446b859e7e4f21bfc5
+  - enabled: 1
+    path: "Assets/Scenes/\u732B\u738B_\u7267\u5E08/\u6EAA\u6D41\u6CB3\u8FB9.unity"
+    guid: 54846e9bc0f1494488382f17f80a0665
   m_configObjects: {}

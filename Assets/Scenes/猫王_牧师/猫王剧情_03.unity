@@ -515,7 +515,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u51A5\u51A5\u4E2D\u6211\u77E5\u9053\u4E86,\u6211\u6210\u4E3A\u4E86..."
+  m_Text: "\u5FC3\u5E95\u91CC\u6709\u4E2A\u58F0\u97F3\u544A\u8BC9\u6211,\u6211\u6210\u4E3A\u4E86..."
 --- !u!222 &737657903
 CanvasRenderer:
   m_ObjectHideFlags: 0

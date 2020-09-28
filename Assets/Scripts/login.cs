@@ -19,4 +19,8 @@ public class login : MonoBehaviour
     {
         
     }
+
+    public void 继续游戏() {
+        SceneManager.LoadScene("mao_Home");
+    }
 }

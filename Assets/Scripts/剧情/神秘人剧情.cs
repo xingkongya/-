@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class 神秘人剧情 : MonoBehaviour
 {
-    private int smr_num = 0;
+    private int smr_num;
     public GameObject 对话框;
     public GameObject 剧情框;
     public GameObject 箭头;
@@ -41,7 +41,7 @@ public class 神秘人剧情 : MonoBehaviour
     }
 
     public void onClick_Num() {
-        if (对话框.active) {
+        if (对话框.activeSelf) {
             对话框.SetActive(false);
         }
         else {
@@ -98,6 +98,7 @@ public class 神秘人剧情 : MonoBehaviour
 
     public void 清除剧情框() {
         smr_num++;
+        PlayerPrefs.SetInt("神秘人剧情点击数", smr_num);
         剧情框.transform.Find("对话").GetComponent<Text>().text = "";
 
     }
@@ -107,5 +108,16 @@ public class 神秘人剧情 : MonoBehaviour
         PlayerPrefs.SetInt("神秘人剧情点击数", smr_num);
         SceneManager.LoadScene("村口小道");
         return;
+    }
+
+    public void 剧情清除() {
+        //待补充
+        if (PlayerPrefs.GetInt("神秘人剧情点击数")!=0) {
+            PlayerPrefs.DeleteKey("神秘人剧情点击数");
+            PlayerPrefs.DeleteKey("初来徐州");
+            PlayerPrefs.DeleteKey("小黄好感度");
+        }
+        SceneManager.LoadScene("猫王剧情_01");
+    
     }
 }

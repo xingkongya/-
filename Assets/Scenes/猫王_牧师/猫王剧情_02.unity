@@ -1961,7 +1961,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5403\u6211\u4E00\u519B\u4F53\u62F3!!!"
+  m_Text: "\u5403\u6211\u4E00\u8BB0\u51E0\u628A\u62F3!!!"
 --- !u!222 &841843394
 CanvasRenderer:
   m_ObjectHideFlags: 0
